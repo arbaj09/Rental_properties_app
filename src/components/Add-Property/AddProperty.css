@@ -1,0 +1,61 @@
+.container-add{
+    display: flex;
+
+  
+    justify-content: center;
+    background-color: whitesmoke;
+
+
+}
+.Form-Control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 8px;
+    
+}
+.Form-Control input{
+    HEIGHT: 2rem;
+    WIDTH: 30REM;
+}
+.Form-Control label{
+    align-self: flex-start;
+
+}
+.Add-BUTTON{
+    font-style: oblique;
+    font-family: fantasy;
+    margin-top: 1rem;
+    /* background-color: red; */
+    height: 3rem;
+    width: 30rem;
+    background: #64677d;
+    color: wheat;
+    font-size: larger;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .container-add {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center;
+    }
+    h2{
+        text-align: center;
+        font-size: medium;
+        font-family: ui-monospace;
+        -webkit-text-stroke-width: medium;
+    }
+  
+    .Form-Control {
+        width: 20rem;
+      max-width: 100%; /* Ensure it doesn't overflow on small screens */
+    }
+  
+    .Form-Control input,
+    .Add-BUTTON {
+      width: 100%; /* Make inputs and button full width on smaller screens */
+      max-width: 100%; /* Limit the maximum width */
+    }
+  }

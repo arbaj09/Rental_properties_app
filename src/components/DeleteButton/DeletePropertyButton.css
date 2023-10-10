@@ -1,0 +1,11 @@
+
+
+.trash{
+    width: 2rem;
+    height: 29px;
+    border-radius: 40%;
+}
+.trash:hover{
+    cursor: pointer;
+   color: red;
+}

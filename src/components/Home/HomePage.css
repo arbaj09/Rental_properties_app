@@ -1,0 +1,137 @@
+/* HomePage.css */
+
+.container {
+
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-item {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .property-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .property-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+ 
+    
+  }
+  .property-image img{
+    width: 24rem;
+    height: 15rem;
+  }
+  li{
+    list-style-type: none;
+  }
+  
+  .property-card:hover {
+    transform: scale(1.02);
+  }
+  /* FilterOptions.css */
+
+/* Container for filter options */
+.filter-options {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual filter items */
+  .filter-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styles */
+  .filter-item label {
+    font-weight: bold;
+  }
+  
+  /* Input styles */
+  .filter-item input[type="text"],
+  .filter-item input[type="date"],
+  .filter-item input[type="number"],
+  .filter-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Button styles (for the "Search" or "Filter" button) */
+  .filter-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .Filter_Button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    
+  }
+  .add-btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .add{
+    color: rgb(134, 67, 67);
+
+  }
+  .Filter_Button:hover {
+    cursor: pointer;
+    background-color: #3b84d2;
+    color: #ccc;
+  }
+  .loading_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+  }
+
+ 
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here, if needed */
+  }
+  
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .property-listings {
+      grid-template-columns: 1fr;
+    }
+  }
+  
